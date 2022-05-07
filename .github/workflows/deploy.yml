@@ -24,13 +24,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: |
-            cd /root/repos/skeleton-node-ms
+            cd /home/ubuntu/auth-microservice-node
             git pull origin main
             docker-compose restart
             echo "ok"
             whoami
-
-
-
-
-     
